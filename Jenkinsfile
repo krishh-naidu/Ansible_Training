@@ -1,6 +1,6 @@
 node {
     stage('ansible inventory'){
-        ansiblePlaybook inventory: 'hosts'
+        ansiblePlaybook inventory: 'hosts',
         playbook: 'deploy.yaml'
     
     }
